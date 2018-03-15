@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "node_modules/.bin/webpack src/main.js --output-path='./dist' --output-filename='[name].bundle.js' --watch"
+    "build": "webpack src/main.js --output-path='./dist' --output-filename='[name].bundle.js'",
+    "watch": "npm run build -- --watch"
   },
   "repository": {
     "type": "git",
