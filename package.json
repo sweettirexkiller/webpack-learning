@@ -19,5 +19,8 @@
   "homepage": "https://github.com/sweettirexkiller/webpack-learning#readme",
   "dependencies": {
     "webpack": "^4.1.1"
+  },
+  "devDependencies": {
+    "webpack-cli": "^2.0.12"
   }
 }
