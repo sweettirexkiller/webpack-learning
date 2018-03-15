@@ -78,7 +78,7 @@
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-eval("exports = module.exports = __webpack_require__(/*! ../node_modules/css-loader/lib/css-base.js */ \"./node_modules/css-loader/lib/css-base.js\")(false);\n// imports\n\n\n// module\nexports.push([module.i, \"body {\\n    background: red;\\n}\", \"\"]);\n\n// exports\n\n\n//# sourceURL=webpack:///./src/main.css?./node_modules/css-loader");
+eval("exports = module.exports = __webpack_require__(/*! ../node_modules/css-loader/lib/css-base.js */ \"./node_modules/css-loader/lib/css-base.js\")(false);\n// imports\n\n\n// module\nexports.push([module.i, \"body {\\n    background: darkgray;\\n}\", \"\"]);\n\n// exports\n\n\n//# sourceURL=webpack:///./src/main.css?./node_modules/css-loader");
 
 /***/ }),
 
@@ -130,11 +130,11 @@ eval("\nvar content = __webpack_require__(/*! !../node_modules/css-loader!./main
 /*!*********************!*\
   !*** ./src/main.js ***!
   \*********************/
-/*! no exports provided */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _main_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./main.css */ \"./src/main.css\");\n/* harmony import */ var _main_css__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_main_css__WEBPACK_IMPORTED_MODULE_0__);\n// import Notifiaction from \"./Notification\";\n\n// notify('Here is my message');\n// log('Here is my message');\n\n// Notifiaction.announce('Here we go as an alert!');\n// Notifiaction.log('Here we are as a log!');\n\n//# sourceURL=webpack:///./src/main.js?");
+eval("\n\n__webpack_require__(/*! ./main.css */ \"./src/main.css\");\n\nfunction _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError(\"Cannot call a class as a function\"); } } // import Notifiaction from \"./Notification\";\n\n\n// notify('Here is my message');\n// log('Here is my message');\nvar Form = function Form() {\n    _classCallCheck(this, Form);\n\n    alert('Form classes are great!');\n};\n\nnew Form();\n// Notifiaction.announce('Here we go as an alert!');\n// Notifiaction.log('Here we are as a log!');\n\n//# sourceURL=webpack:///./src/main.js?");
 
 /***/ })
 
