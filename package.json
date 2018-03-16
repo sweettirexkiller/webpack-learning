@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "webpack",
     "watch": "webpack --watch",
-    "production": "NODE_ENV=production webpack"
+    "prod": "NODE_ENV=production webpack"
   },
   "repository": {
     "type": "git",
@@ -29,6 +29,8 @@
     "babel-loader": "^7.1.4",
     "babel-preset-env": "^1.6.1",
     "css-loader": "^0.28.10",
+    "extract-text-webpack-plugin": "^3.0.2",
+    "mini-css-extract-plugin": "^0.2.0",
     "style-loader": "^0.20.3",
     "webpack-cli": "^2.0.12"
   }
