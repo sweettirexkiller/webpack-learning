@@ -22,16 +22,28 @@ module.exports = {
         rules: [
             {
                 test: /\.s[ac]ss$/,
-                use: [
-                    MiniCssExtractPlugin.loader,
-                    "css-loader",
-                    'sass-loader'
-                ]
+                use: [MiniCssExtractPlugin.loader,"css-loader",'sass-loader'],
+                // use: [
+                //     MiniCssExtractPlugin.loader,
+                //     {
+                //         loader: 'css-loader',
+                //         options: {url: false}
+                //     },
+                //     'sass-loader'
+                // ]
             },
             {
                 test: /\.js$/,
                 exclude: /node_modules/,
                 loader: "babel-loader"
+            },
+            {
+                test: /\.(jpe?g|png|gif|svg)$/i,
+                loader: 'file-loader',
+                options: {
+                    name: 'images/[name].[hash].[ext]'
+                }
+
             }
         ]
     },

@@ -1,6 +1,8 @@
+@import "~some-package/style.css";
 $primary: grey;
 
-
 body {
-    background: $primary;
+  background: url('./images/backgournd.jpeg');
+  width: 1920px;
+  height: 1200px;
 }
