@@ -4,8 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "webpack",
-    "watch": "webpack --watch"
+    "dev": "webpack",
+    "watch": "webpack --watch",
+    "production": "NODE_ENV=production webpack"
   },
   "repository": {
     "type": "git",
@@ -19,6 +20,8 @@
   },
   "homepage": "https://github.com/sweettirexkiller/webpack-learning#readme",
   "dependencies": {
+    "node-sass": "^4.7.2",
+    "sass-loader": "^6.0.7",
     "webpack": "^4.1.1"
   },
   "devDependencies": {
