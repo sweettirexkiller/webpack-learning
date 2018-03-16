@@ -79,7 +79,15 @@ module.exports = {
             // Give paths to parse for rules. These should be absolute!
             paths: glob.sync(path.join(__dirname, 'index.html')),
             minimize: isProduction
-        })
+        }),
+        function () {
+            this.plugin('done', stats => {
+                require('fs').writeFileSync(
+                    path.join(__dirname, 'dist/manifest.json'),
+                    JSON.stringify(stats.toJson().assetsByChunkName)
+                );
+            })
+        }
     ],
 };
 
