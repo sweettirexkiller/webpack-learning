@@ -79,7 +79,18 @@
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-eval("\n\nfunction _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError(\"Cannot call a class as a function\"); } }\n\n// import Notifiaction from \"./Notification\";\n// import './main.scss';\n// notify('Here is my message');\n// log('Here is my message');\nvar Form = function Form() {\n    _classCallCheck(this, Form);\n\n    alert('Form classes are great!');\n};\n\nnew Form();\n// Notifiaction.announce('Here we go as an alert!');\n// Notifiaction.log('Here we are as a log!');\n\n//# sourceURL=webpack:///./src/main.js?");
+eval("\n\n__webpack_require__(/*! ./main.scss */ \"./src/main.scss\");\n\nfunction _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError(\"Cannot call a class as a function\"); } } // import Notifiaction from \"./Notification\";\n\n\n// notify('Here is my message');\n// log('Here is my message');\nvar Form = function Form() {\n    _classCallCheck(this, Form);\n\n    alert('Form classes are great!');\n};\n\nnew Form();\n// Notifiaction.announce('Here we go as an alert!');\n// Notifiaction.log('Here we are as a log!');\n\n//# sourceURL=webpack:///./src/main.js?");
+
+/***/ }),
+
+/***/ "./src/main.scss":
+/*!***********************!*\
+  !*** ./src/main.scss ***!
+  \***********************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("// extracted by mini-css-extract-plugin\n\n//# sourceURL=webpack:///./src/main.scss?");
 
 /***/ }),
 

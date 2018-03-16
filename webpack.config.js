@@ -16,9 +16,9 @@ let pathsToClean = [
 
 // the clean options to use
 let cleanOptions = {
-    root:     __dirname,
-    verbose:  true,
-    dry:      false
+    root: __dirname,
+    verbose: true,
+    dry: false
 };
 
 
@@ -39,7 +39,7 @@ module.exports = {
         rules: [
             {
                 test: /\.s[ac]ss$/,
-                use: [MiniCssExtractPlugin.loader,"css-loader",'sass-loader'],
+                use: [MiniCssExtractPlugin.loader, "css-loader", 'sass-loader'],
                 // use: [
                 //     MiniCssExtractPlugin.loader,
                 //     {
@@ -56,11 +56,17 @@ module.exports = {
             },
             {
                 test: /\.(jpe?g|png|gif|svg)$/i,
-                loader: 'file-loader',
-                options: {
-                    name: 'images/[name].[hash].[ext]'
-                }
-
+                loaders: [
+                    {
+                        loader: 'file-loader',
+                        options: {
+                            name: 'images/[name].[hash].[ext]'
+                        }
+                    },
+                    {
+                        loader: 'img-loader'
+                    }
+                ],
             }
         ]
     },
