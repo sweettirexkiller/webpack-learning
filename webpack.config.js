@@ -1,7 +1,9 @@
 var webpack = require('webpack');
 var path = require('path');
+var glob = require('glob');
 const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
+const PurifyCSSPlugin = require('purifycss-webpack');
 
 var isProduction = process.env.NODE_ENV === 'production';
 
@@ -55,6 +57,11 @@ module.exports = {
             chunkFilename: "[id].css"
         }),
         new webpack.LoaderOptionsPlugin({
+            minimize: isProduction
+        }),
+        new PurifyCSSPlugin({
+            // Give paths to parse for rules. These should be absolute!
+            paths: glob.sync(path.join(__dirname, 'index.html')),
             minimize: isProduction
         })
     ],
