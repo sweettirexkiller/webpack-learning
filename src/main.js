@@ -1,5 +1,5 @@
 // import Notifiaction from "./Notification";
-import './main.scss';
+// import './main.scss';
 // notify('Here is my message');
 // log('Here is my message');
 class Form {
